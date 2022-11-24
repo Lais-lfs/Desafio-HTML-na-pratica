@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Introdução ao HTML na prática</title>
+</head>
+
+<body>
+    <h1 id="inicio">Introdução ao HTML na prática</h1>
+    <hr />
+    <h3>Breve conteúdo introdutório para o início dos estudos sobre HTML.</h3>
+    <p>O <mark><abbr title="HiperText Markup Language">HTML</abbr>é uma linguagem de marcação de hipertexto</mark>, ou seja, é basicamente um arquivo de marcação, sendo um pontapé inicial para muitos(as) que estão iniciando na área da programação. Por isso, aqui estão algumas explicações sobre conceitos iniciais que podem ajudar você a engrenar de vez nos estudos.</p>
+    <ul>
+        <li><a href="#ferramentas">Ferramentas utilizadas</a></li>
+        <li><a href="#inspetor">Inspetor de elementos</a></li>
+        <li><a href="#estrutura">Estrutura básica do HTML</a></li>
+        <li><a href="#tags">Tags</a></li>
+        <li><a href="#atributos">Atributos de tags</a></li>
+        <li><a href="#textos">Textos</a></li>
+        <li><a href="#listas">Listas ordenadas e não ordenadas</a></li>
+        <li><a href="#links">Link</a></li>
+        <li><a href="#referencias">Referências para estudo</a></li>
+    </ul>
+
+
+    <br/><h2 id="ferramentas">Ferramentas utilizadas</h2>
+    <p>Uma das ferramentas mais comuns para criar páginas na web utilizando HTML, é o Visual Studio Code, que é uma ferramenta gratuita e intuitiva, o que é excelente para quem está começando a aprender.</p>
+    <p>Esse software pode ser instalado de forma fácil por meio de seu próprio site: <a href="https://code.visualstudio.com/" target="_blank">https://code.visualstudio.com/</a></p>
+    <p>O Visual Studio Code possui várias extensões, desde extensões de temas para que você tenha um ambiente customizado, até mesmo extensões que ajudam você a programar com mais facilidade. Um exemplo disso é a extensão “Live Server” que inicia um servidor local de desenvolvimento no qual você consegue visualizar o seu código e acompanhar as modificações feitas nele apenas salvando o arquivo (ctrl + s) no vscode.</p>
+    <p>Além disso, o Visual Studio possui extensões já pré-configuradas que podem te ajudar muito a programar de forma rápida e descomplicada.</p>
+    <small><a href="#inicio">(Voltar ao início)</a></small>
+
+
+    <br/><br/><h2 id="inspetor">Inspetor de elementos</h2>
+    <p>O inspetor de elementos é uma ferramenta presente no navegador usada por desenvolvedores.</p>
+    <p>Estas são algumas das formas que você pode acessar essa ferramenta, sendo que em todas, o navegador deve estar aberto:</p>
+    <ul>
+        <li>Apertando a tecla “f12” em seu teclado</li>
+        <li>Clicando com o botão direito mouse > inspecionar</li>
+        <li>Clicando no botão de três pontinhos que fica no canto superior direito do navegador > “Mais ferramentas” > “Ferramentas do programador”</li>
+    </ul>
+    <p>Essa ferramenta possui vários tipos de recursos, como, por exemplo, ter acesso ao html da página em que você está, modificá-lo (mas não serão modificações permanentes), limpar o cache da página, além de ser possível executar comandos gerais de programação.</p>
+    <small><a href="#inicio">(Voltar ao início)</a></small>
+
+
+    <br/><br/><h2 id="estrutura">Estrutura básica do HTML</h2>
+    <p>Antes de entrar de fato na explicação da estrutura do HTML, segue abaixo o passo a passo de como começar, criando o arquivo no Visual Studio Code onde o projeto em HTML será feito:</p>
+    <ul>
+        <li>Primeiro crie uma pasta em seu computador, na qual este projeto será salvo;</li>
+        <li>Abra o vscode;</li>
+        <li>Clique em: “Arquivo” > “Abrir pasta” > selecione a pasta que você criou anteriormente;</li>
+        <li>Com a pasta aberta no vscode, clique na opção “Novo arquivo” e dê um nome para o seu projeto</li>
+        <li>Em frente ao nome do seu projeto, digite “.html”, pois assim o vscode entende que este será um arquivo de HTML.</li>
+    </ul>
+    <p>As tags no HTML são compostas por um sinal de maior “<”, o nome da tag e o sinal de menor “>”, desta forma: &lt;body&gt;. E sempre deverão ser fechadas com um “/” antes do nome da tag, assim: &lt;/body&gt; (exceto por algumas tags específicas).</p>
+    <p>O HTML consiste em 3 tags principais que formam sua estrutura básica: <strong>html, head e body</strong>.</p>
+    <img src="https://kinsta.com/wp-content/uploads/2021/11/Untitled-54.png">
+    <br/><br/><p><strong>HTML</strong>: tag que define uma página HTML, ou seja, tudo que estiver dentro dela será uma página HTML.</p>
+    <p><strong>Head</strong>: dentro da tag head ficam algumas pré-configurações, ou seja, fica tudo aquilo que carrega sem que apareça para o usuário.</p>
+    <p><strong>Body</strong>: é de fato o corpo do projeto, ou seja, tudo aquilo que está dentro dessa tag será exibido visualmente para o usuário.</p>
+    <small><a href="#inicio">(Voltar ao início)</a></small>
+
+   
+    <br/><br/><h2 id="tags">Tags</h2>
+    <p>Exemplos de tags e o que fazem na página:</p>
+    
+    <p><i>&lt;i&gt; O texto dentro dela ficará em itálico &lt;/i&gt;</i></p>
+    <p>&lt;strong&gt; <strong>Texto em negrito</strong> &lt;/strong&gt;</p>
+    <p>&lt;strong&gt;&lt;i&gt; <strong><i>Texto em negrito e itálico</i></strong> &lt;/strong&gt;&lt;/i&gt;</p>
+
+    <br/><p>Algumas tags não possuem a tag de fechamento, por exemplo:</p>
+    <p>&lt;input type=”text”/&gt;: essa aqui cria um campo</p>
+    <p>&lt;img /&gt;: auto se fecha, não tem início e fim</p>
+    <small><a href="#inicio">(Voltar ao início)</a></small>
+
+
+
+    <br/><br/><h2 id="atributos">Atributos de tags</h2>
+    <p>Os atributos são propriedades que uma tag pode ter, sendo de dois tipos: globais ou específicas. Os atributos globais todas as tags vão ter, enquanto que as específicas serão particulares de determinadas tags.</p>
+    <p>Exemplos de atributos globais:</p>
+    <ul>
+        <li><strong>Id</strong>: é um atributo identificador, ou seja, cada tag tem um id único, mas todas terão um.</li>
+        <li><strong>Style</strong>: é um comando do <abbr title="Cascading Style Sheets">CSS</abbr> que pode ser usado para estilizar o HTML, logo, é possível inserir elementos de formatação dentro da tag.
+            <p>&lt;strong style=”color: blue”&gt;</p>
+            </li>
+        <li><strong>Class</strong>: é uma forma de padronizar a estilização.
+            <p>&lt;strong class=”titulo-principal”&gt;</p> (nesse exemplo, todo lugar que aparecer “titulo-principal” terá esse estilo configurado.)
+            </li>
+    </ul>
+
+    <p>Exemplos de atributos específicos:</p>
+    <ul>
+        <li><strong>Type</strong>: é um atributo que fica dentro do input, logo, ele é específico do input.
+        <p>&lt;input type=”number”/&gt;</p>
+        <p>&lt;input type=”text”/&gt;</p>
+        <p>&lt;input type=”color”/&gt;</p></li>
+
+        <li><strong>Atributos src e width na tag img</strong>: o img é uma tag para inserir imagens dentro da página, mas ela só de fato funciona se estiver acompanhada do atributo scr:
+            <p>&lt;img src=”https://url-da-imagem.jpg”/&gt;</p>
+            <p>Além disso, outro atributo do img, é o width, que define a largura da imagem que está sendo inserida:</p>
+            <p>&lt;img width=”250” src=”https://url-da-imagem.jpg”/&gt;</p>
+            </li>
+    </ul>
+    <small><a href="#inicio">(Voltar ao início)</a></small>
+
+
+    <br/><br/><h2 id="textos">Textos</h2>
+    <p>A seguir estão algumas tags específicas de textos, ou seja, tipografia HTML.</p>
+    <ul>
+        <li>Tags para títulos, subtítulos e cabeçalhos:
+            <ul>
+                <li>&lt;h1&gt; Título</li>
+                <li>&lt;h2&gt; Subtítulo</li>
+                <li>...</li>
+                <li>&lt;h6&gt; Cabeçalho</li>
+            </ul>  
+        </li><br/>
+        <li>Tags para serem usadas no meio de textos:
+            <ul>
+                <li>Parágrafo: &lt;p&gt;</li>
+                <li>Citação: &lt;blockquote&gt;</li>
+                <li>Itálico: &lt;i&gt;</li>
+                <li>Negrito: &lt;strong&gt;</li>
+                <li>Sublinhado: &lt;u&gt;</li>
+                <li>Elevar elemento: &lt;sub&gt;</li>
+            </ul>
+        </li>
+    </ul>
+    <p>Para aprender mais sobre HTML e conhecer outras tags, recomendo este site que possui vários tutoriais e explicações muito didáticas:</p>
+    <p><blockquote><a href="https://www.w3schools.com/html/default.asp" target="_blank">https://www.w3schools.com/html/default.asp</a></blockquote></p>
+    <small><a href="#inicio">(Voltar ao início)</a></small>
+
+
+    <br/><br/><h2 id="listas">Listas ordenadas e não ordenadas</h2>
+    <p>Lista ordenada (ol): faz uma ordenação com números. Para criar listas (ordenadas e não ordenadas) você deve identificar os itens da lista usando a tag &lt;li&gt;.</p>
+    <p>Exemplo:</p>
+    <p>&nbsp &nbsp &lt;ol&gt;</p>
+    <p>&nbsp &nbsp &nbsp &nbsp &lt;li&gt;Item 1&lt;/li&gt;</p>
+    <p>&nbsp &nbsp &nbsp &nbsp &lt;li&gt;Item 2&lt;/li&gt;</p>
+    <p>&nbsp &nbsp &nbsp &nbsp &lt;li&gt;Item 3&lt;/li&gt;</p>
+    <p>&nbsp &nbsp &lt;/ol&gt;</p>
+
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+
+    <br/><p>Lista não ordenada (ul): não utilizam números mas sim marcadores, por exemplo, bolinhas.</p>
+    <p>Exemplo:</p>
+    <p>&nbsp &nbsp &lt;ul&gt;</p>
+    <p>&nbsp &nbsp &nbsp &nbsp &lt;li&gt;Item 1&lt;/li&gt;</p>
+    <p>&nbsp &nbsp &nbsp &nbsp &lt;li&gt;Item 2&lt;/li&gt;</p>
+    <p>&nbsp &nbsp &nbsp &nbsp &lt;li&gt;Item 3&lt;/li&gt;</p>
+    <p>&nbsp &nbsp &lt;/ul&gt;</p>
+
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+    <small><a href="#inicio">(Voltar ao início)</a></small>
+
+
+    <br/><br/><h2 id="links">Link</h2>
+    <p>Links direcionam o usuário para um lugar específico, podendo ser para uma página externa ou na mesma página em que o usuário já está, e para ambos os casos utiliza-se a tag &lt;a&gt;.</p>
+    <p>Exemplo:</p>
+    <p>&lt;a href=”https://url-da-pagina.com” target=”_blank”>Nome Clicável&lt;/a&gt;</p>
+    <p>Atributo para a tag &lt;a&gt;:</p>
+    <ul>
+        <li><strong>Target</strong>:
+            <ul>
+               <li><mark>blank</mark>: link será aberto em outra aba do navegador</li>
+               <li><mark>self</mark>: comportamento padrão</li> 
+               <li><mark>parent</mark>: não é mais usado</li> 
+               <li><mark>top</mark>: não é mais usado</li> 
+            </ul>
+        </li><br/>
+        <li><strong>Title</strong>: faz com que apareça um balão com uma mensagem ao passar o mouse sobre o link (atributo que ajuda muito na experiência do usuário dentro do site).</li>
+    </ul>
+    <small><a href="#inicio">(Voltar ao início)</a></small>
+
+
+    <br/><br/><h2 id="referencias">Referências para estudo</h2>
+        
+    <p><strong><i><u>Links importantes:</u></i></strong></p>
+    <ul>
+        <li><a href="https://www.w3schools.com/html/html_intro.asp" target="_blank">Introdução ao HTML</a></li>
+        <li><a href="https://www.w3schools.com/html/html_attributes.asp" target="_blank">Explicações sobre atributos</a></li>
+        <li><a href="https://www.w3schools.com/html/html_styles.asp" target="_blank">Mais sobre estilização</a></li>
+        <li><a href="https://www.w3schools.com/html/html_formatting.asp" target="_blank">Sobre formatação</a></li>
+        <li><a href="https://www.w3schools.com/html/html_colors.asp" target="_blank">Sobre como usar cores em HTML</a></li>
+        <li><a href="https://www.w3schools.com/tags/default.asp" target="_blank">Lista completa de tags + informações</a></li>
+        <li><a href="https://www.w3schools.com/html/html_forms.asp" target="_blank">Como criar e editar formulários</a></li>
+        <li><a href="https://www.w3schools.com/html/html_examples.asp" target="_blank">Exemplos gerais</a></li>
+    </ul>
+
+    <p><strong><i><u>Cursos gratuitos:</u></i></strong></p>
+    <ul>
+        <li><a href="https://web.dio.me/course/introducao-criacao-de-websites-com-html5-e-css3/learning/462f831d-5fdf-485e-bf07-1d391eb94ac8" target="_blank">Introdução a Criação de Websites com HTML5 e CSS3</a></li>
+        <li><a href="https://web.dio.me/course/instalacao-e-configuracao-do-visual-studio-code/learning/25e340d6-1a1e-4d54-95dd-9fbd1812a7c6" target="_blank">Instalação e Configuração do Visual Studio Code</a></li>
+        <li><a href="https://cursos.letscode.com.br/curso-digital/829a58a4-5871-410f-883a-4653fcccb0b6" target="_blank"> Introdução a HTML</a></li>
+    </ul>
+    <small><a href="#inicio">(Voltar ao início)</a></small>
